@@ -1,0 +1,19 @@
+spring :
+  application:
+    name: MONGO-SERVICE
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: employees
+      #username: admin
+      #password: password
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
